@@ -15,6 +15,7 @@ const mutation = {
     };
   },
 };
+//这是一个函数
 export default function (state = initHomeStore, action) {
   if (!mutation[action.type]) return state;
   return mutation[action.type](state, action);
